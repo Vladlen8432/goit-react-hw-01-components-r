@@ -1,0 +1,32 @@
+.profile-section {
+    justify-content: center;
+}
+
+.container-profile {
+    background-color: #33d6ff;
+    padding: 60px;
+    border-radius: 60px;
+    justify-content: center;
+}
+
+.img-item {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.username {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tag-location {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.label-stat,
+.percentage-stat {
+    margin-right: auto;
+    margin-left: auto;
+}
