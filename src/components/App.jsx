@@ -11,21 +11,9 @@ import TransactionHistory from './TransactionHistory/transactionsIndex';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      <div className="container-profile">
-        <Profile />
-        <Statistics title="Upload stats" stats={data} />
-      </div>
+    <div className='container'>
+      <Profile />
+      <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transaction} />
     </div>

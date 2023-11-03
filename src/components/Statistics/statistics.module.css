@@ -1,0 +1,36 @@
+.statistics {
+  margin-top: 60px;
+  width: 400px;
+}
+
+.title {
+  width: 500px;
+  font-size: 36px;
+  margin: 0;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  text-align: center;
+  background-color: #c2c2d6;
+  border-radius: 10px 10px 0 0;
+}
+
+.statList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.itemStat {
+  font-size: 20px;
+  background-color: #b3f0ff;
+  justify-content: center;
+}
+
+.itemStat:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+.itemStat:last-child {
+  border-radius: 0 0 10px 0;
+}

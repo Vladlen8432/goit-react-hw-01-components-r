@@ -1,21 +1,21 @@
-import "./transactions.css";
+import css from "./transactions.module.css";
 
 const TransactionHistory = ({ items }) => {
     return (
-      <table className="transaction-history">
-        <thead className="transaction-head-container">
-          <tr className="transaction-head">
-            <th className="transaction-head-item">Type</th>
-            <th className="transaction-head-item">Amount</th>
-            <th className="transaction-head-item">Currency</th>
+      <table className={css.transactionHistory}>
+        <thead className={css.transactionHeadContainer}>
+          <tr className={css.transactionHead}>
+            <th className={css.transactionHeadItem}>Type</th>
+            <th className={css.transactionHeadItem}>Amount</th>
+            <th className={css.transactionHeadItem}>Currency</th>
           </tr>
         </thead>
         <tbody>
           {items.map(transaction => (
-            <tr className="transaction-body-container" key={transaction.id}>
-              <td className="transaction-body-item">{transaction.type}</td>
-              <td className="transaction-body-item">{transaction.amount}</td>
-              <td className="transaction-body-item">{transaction.currency}</td>
+            <tr className={css.transactionBodyContainer} key={transaction.id}>
+              <td className={css.transactionBodyItem}>{transaction.type}</td>
+              <td className={css.transactionBodyItem}>{transaction.amount}</td>
+              <td className={css.transactionBodyItem}>{transaction.currency}</td>
             </tr>
           ))}
         </tbody>
